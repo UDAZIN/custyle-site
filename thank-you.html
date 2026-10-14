@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="תודה שבחרת ב-CU Style Jewelry — תכונות הצמיד, הוראות טיפוח ושימור, וכל מה שכדאי לדעת.">
+<title>תודה שבחרת ב-CU Style Jewelry</title>
+<style>
+  :root{
+    --ink:#e7d9c5; --muted:#a99a86; --copper:#c07f52; --copper-dark:#d8996a;
+    --cream:#f3e7d5; --paper:#24211c; --bg:#1b1815; --line:rgba(216,153,106,.24);
+    --olive-dark:#121010; --panel:#211e18;
+    --serif:Georgia,"Times New Roman",serif;
+    --maxw:1120px; --readw:720px; --sec:clamp(30px,3.5vw,52px); --topbar:112px; --navh:50px;
+    --shadow:0 16px 44px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:calc(var(--topbar) + var(--navh) + 12px)}
+  body{margin:0; padding-top:calc(var(--topbar) + var(--navh)); background:var(--bg); color:var(--ink);
+       font-family:var(--serif); font-weight:400; font-size:18px; line-height:1.75; -webkit-font-smoothing:antialiased}
+  img{max-width:100%; display:block}
+  a{color:inherit; text-decoration:none}
+  h1,h2,h3{font-weight:500; margin:0}
+  section{padding-block-start:var(--sec)}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding-inline:18px; padding-block-start:0}
+  .read{max-width:var(--readw); margin:0 auto; padding-inline:18px}
+
+  .topbar{position:fixed; inset-block-start:0; inset-inline:0; height:var(--topbar); z-index:50;
+          display:flex; align-items:center; justify-content:center;
+          background:linear-gradient(180deg,var(--olive-dark),#1b1815);
+          box-shadow:0 2px 18px rgba(0,0,0,.35)}
+  .topbar a.logo-link{display:flex; align-items:center}
+  .topbar img{height:64px; width:auto}
+
+  .nav{position:fixed; inset-block-start:var(--topbar); inset-inline:0; height:var(--navh); z-index:49;
+       background:#121010; border-bottom:1px solid rgba(255,255,255,.08);
+       display:flex; align-items:center; justify-content:center; gap:26px; flex-wrap:wrap; padding:0 18px}
+  .nav a{font-size:14px; color:var(--cream); opacity:.82; letter-spacing:.02em}
+  .nav a:hover{opacity:1; color:var(--copper-dark)}
+
+  .hero-note{text-align:center; padding-block-start:calc(var(--sec) * .7)}
+  .hero-note h1{color:var(--cream); font-size:clamp(28px,4.6vw,44px); line-height:1.35}
+  .hero-note p.lead{color:var(--copper); font-size:19px; margin:20px auto 0; max-width:var(--readw); line-height:1.9}
+
+  .sec-title{text-align:center; display:flex; align-items:center; justify-content:center; gap:18px;
+             letter-spacing:.1em; color:var(--copper-dark); font-size:clamp(22px,3.2vw,28px); margin-bottom:36px}
+  .sec-title::before, .sec-title::after{content:"\2766"; color:var(--copper); font-size:16px; opacity:.7; font-weight:400}
+
+  .panel{position:relative; background:var(--panel); border:1px solid var(--line); border-radius:22px;
+         padding:34px 30px; margin-block-start:var(--sec); scroll-margin-top:calc(var(--topbar) + var(--navh) + 12px)}
+  .panel::before{content:""; position:absolute; inset:7px; border:1px solid rgba(216,153,106,.20);
+         border-radius:13px; pointer-events:none}
+
+  p.feat{margin:0 0 16px; line-height:1.9; color:var(--ink)}
+  p.feat b{color:var(--copper-dark); font-weight:600}
+  p.tip{margin:0 0 16px; line-height:1.9; color:var(--ink); padding-inline-start:4px}
+  p.hedge{font-size:13px; color:var(--muted); line-height:1.7; margin-top:26px; border-top:1px solid var(--line); padding-top:20px}
+  .care-steps{margin:10px 0 20px; padding-inline-start:22px}
+  .care-steps li{margin:0 0 8px; line-height:1.8; color:var(--ink)}
+  .contact-line{font-size:19px; margin:0 0 14px; line-height:1.9}
+  .contact-line a{color:var(--copper-dark); border-bottom:1px solid var(--copper)}
+  .thanks-line{color:var(--copper); font-size:19px; margin:22px 0 0; line-height:1.8}
+
+  footer{text-align:center; color:var(--muted); padding:50px 16px 20px; font-size:14px; background:#121010}
+  .social-links{display:flex; justify-content:center; gap:22px; margin-bottom:16px; flex-wrap:wrap}
+  .social-links a{color:var(--copper-dark); font-size:15px; border-bottom:1px solid var(--copper); padding-bottom:2px}
+  .social-links a:hover{color:var(--cream)}
+
+  @media(max-width:760px){
+    body{font-size:17px}
+    .panel{padding:32px 22px}
+    .sec-title{font-size:21px; margin-bottom:26px}
+    .nav{justify-content:flex-start; flex-wrap:nowrap; overflow-x:auto; gap:20px}
+    .nav a{white-space:nowrap; flex:0 0 auto}
+  }
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo-link" href="https://custyle.co.il/" aria-label="CU Style — לעמוד הבית">
+      <img src="assets/logo-flat.png" alt="CU Style">
+    </a>
+  </header>
+
+  <nav class="nav">
+    <a href="#features">תכונות הצמיד</a>
+    <a href="#care">איך לשמור על הצמיד</a>
+    <a href="#experience">חוויית שימוש והמלצות</a>
+    <a href="#contact">יצירת קשר</a>
+  </nav>
+
+  <main>
+    <section class="hero-note read">
+      <h1>תודה שבחרת ב- CU Style Jewelry</h1>
+      <p class="lead">צמיד הנחושת שלך עוצב ונוצר מתוך אהבה לתכשיטים ייחודיים ואיכותיים, המחברים בין טבע, מסורת וסטייל עכשווי. אנו שמחים שהצטרפת למשפחת Cu Style Jewelry ורוצים לעזור לך להפיק את המירב מהתכשיט שלך.</p>
+    </section>
+
+    <section class="wrap">
+      <div class="panel read" id="features">
+        <h2 class="sec-title">תכונות הצמיד</h2>
+        <p class="feat">🌟 <b>נחושת טהורה ואותנטית</b> – עשוי ב-100% נחושת טבעית, ללא ציפויים וללא חומרים מלאכותיים.</p>
+        <p class="feat">💪 <b>תמיכה לגוף ולנפש</b> – רבים מאמינים כי לנחושת יש סגולות המסייעות להקל על כאבים, לשפר את זרימת הדם, להפחית עייפות ולהגביר את האנרגיה היומית.</p>
+        <p class="feat">⚡ <b>חיזוק המערכת החיסונית</b> – יש הסבורים כי הנחושת מסייעת לגוף להילחם בדלקות ולחזק את מערכת החיסון.</p>
+        <p class="feat">🦠 <b>אנטיבקטריאלית וטבעית</b> – לנחושת יש תכונות טבעיות של חיטוי וניקוי, המסייעות בהרחקת חיידקים ומזיקים מהעור.</p>
+        <p class="feat">🩹 <b>היפו-אלרגנית ומתאימה לעור רגיש</b> – נחושת טהורה לרוב אינה גורמת לתגובות אלרגיות, ומתאימה גם לבעלי עור רגיש.</p>
+        <p class="feat">🧘‍♀️ <b>איזון אנרגטי ורוגע נפשי</b> – נחושת נתפסת כמתכת המאפשרת זרימה חופשית של אנרגיה בגוף, מסייעת להרגעה ושיפור מצב הרוח.</p>
+        <p class="feat">🎨 <b>עיצוב בעבודת יד</b> – כל צמיד ייחודי, עם טביעת האומן, כך שאין שניים זהים.</p>
+      </div>
+
+      <div class="panel read" id="care">
+        <h2 class="sec-title">איך לשמור על הצמיד שלך?</h2>
+        <p class="feat">✔ <b>נחושת משתנה עם הזמן</b> – היא עשויה לפתח פטינה (שכבת חמצון ירקרקה/כהה). זה תהליך טבעי, המעניק לה מראה ייחודי. להחזרת הברק המקורי:</p>
+        <ul class="care-steps">
+          <li>לערבב חצי כפית מלח לימון בכוס מים, להשרות את הצמיד למספר דקות, לשטוף היטב ולייבש.</li>
+          <li>או לנקות בעדינות עם תערובת של מיץ לימון וסודה לשתייה, לשטוף במים ולייבש היטב.</li>
+        </ul>
+        <p class="feat">✔ <b>שמירה על יובש וניקיון</b> – להימנע ממגע עם מים, מוצרי טיפוח, בשמים וחומרים כימיים כדי למנוע חמצון מהיר.</p>
+        <p class="feat">✔ <b>אחסון במקום יבש</b> – לשימור לאורך זמן, מומלץ לשמור את הצמיד בקופסה סגורה כאשר אינו בשימוש.</p>
+      </div>
+
+      <div class="panel read" id="experience">
+        <h2 class="sec-title">חוויית שימוש והמלצות</h2>
+        <p class="feat">💡 <b>כתם ירקרק על העור? זה טבעי!</b> – תגובת הנחושת לחומציות הגוף היא תהליך טבעי ומשתנה מאדם לאדם. למעשה, אם הצמיד משאיר סימן ירקרק, זה עשוי להעיד על חומציות גבוהה בגוף. חומציות נמוכה ומאוזנת נחשבת לבריאה יותר, ולכן השימוש בצמיד עשוי להיות אינדיקציה למצב מאוזן של הגוף.</p>
+        <p class="feat">💛 <b>תנו לו זמן – ואולי תופתעו!</b> – רבים מהלקוחות שלנו מדווחים על שיפור בתחושה, ירידה בכאבים והגברת האנרגיה כבר בימים הראשונים של השימוש בצמיד.</p>
+        <p class="feat">⚡ <b>חיבור טבעי לבריאות טובה יותר</b> – צמיד הנחושת שלך הוא לא רק תכשיט, אלא כלי שיכול לסייע לך להרגיש טוב יותר, להגביר את האנרגיה ולתמוך באורח חיים מאוזן ובריא.</p>
+        <p class="hedge">הסגולות המיוחסות לנחושת מבוססות על מסורת ואמונה בלבד. אין באמור הבטחה או ייעוץ רפואי, והתכשיט אינו תחליף לטיפול מקצועי.</p>
+      </div>
+
+      <div class="panel read" id="contact">
+        <h2 class="sec-title">אנחנו כאן עבורך!</h2>
+        <p class="contact-line">💬 <a href="https://wa.me/972546666062" target="_blank" rel="noopener">054-6666062</a> – שאלות, התייעצות או שיתוף חוויות, תמיד נשמח לשמוע ממך!</p>
+        <p class="thanks-line">💖 תודה על היותך חלק מהמסע שלנו – Cu Style Jewelry, חיבור בין טבע ליופי!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.instagram.com/custylejewelry/" target="_blank" rel="noopener">אינסטגרם @custylejewelry</a>
+      <a href="https://custyle.co.il/" target="_blank" rel="noopener">custyle.co.il</a>
+    </div>
+    נחושת טהורה 99.9% · בעבודת יד<br/>CU Style · כל הזכויות שמורות
+  </footer>
+</body>
+</html>
